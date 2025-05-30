@@ -4,7 +4,8 @@
 
 #include <arpa/inet.h>
 #include <cstring>
-#include <memory>
+#include <memory> 
+#include <array>
 #include <netdb.h>
 #include <stdexcept>
 #include <system_error>
