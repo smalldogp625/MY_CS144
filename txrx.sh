@@ -169,8 +169,9 @@ trap exit_cleanup EXIT
 get_cmdline_options "$@"
 
 . "$(dirname "$0")"/etc/tunconfig
-REF_HOST=${TUN_IP_PREFIX}.144.1
-TEST_HOST=${TUN_IP_PREFIX}.144.1
+
+REF_HOST=169.254.144.1
+TEST_HOST=169.254.144.1
 SERVER_PORT=$(($((RANDOM % 50000)) + 1025))
 if [ "$IUMODE" = "i" ]; then
     # IPv4 mode
